@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.btn {
+  background-color: #00ce25a0;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+#HomePage {
+  color: white;
+  a,
+  a:visited,
+  a:active {
+    color: white;
+  }
+  padding: 32px 40px;
+
+  h1 {
+    margin: 0;
+    margin-top: -3vw;
+    a {
+      text-decoration: none;
+      font-family: "Chilanka", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 10vw;
+    }
+  }
+
+  h2 {
+    margin-top: 3em;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    line-height: 2.5rem;
+  }
+
+  img {
+    height: 6vw;
+    opacity: 0.62;
+  }
+
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  > div:first-child,
+  > div:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+  > div:last-child {
+    margin-top: 5em;
+  }
+  dd {
+    font-size: 150%;
+    margin: 0;
+    text-align: center;
+  }
+
+  dt {
+    font-size: 80%;
+    font-weight: 200;
+  }
+}
