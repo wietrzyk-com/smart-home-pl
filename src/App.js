@@ -38,7 +38,43 @@ function App() {
       </section>
 
       <section id="WhyChooseUs">
-        <div></div>
+        <div>
+          <h2>Dlaczego my?</h2>
+          <h3>Zalety systemu Loxone</h3>
+          <p>
+            <a className="btn" href="#Services">
+              Learn more
+            </a>
+          </p>
+          <ol className="custom-list">
+            <li>
+              <h4>Komfort i wygoda</h4>
+              <p>
+                Loxone automatyzuje wszystkie aspekty Twojego domu, od
+                oświetlenia po kontrolę klimatu i bezpieczeństwo, zapewniając
+                komfortowe i intuicyjne zarządzanie z dowolnego miejsca za
+                pomocą wygodnej aplikacji.
+              </p>
+            </li>
+            <li>
+              <h4>Efektywność energetyczna i oszczędność</h4>
+              <p>
+                Inteligentne rozwiązania Loxone pomagają zmniejszyć zużycie
+                energii, optymalizując pracę systemów grzewczych,
+                oświetleniowych i innych urządzeń, co prowadzi do znacznych
+                oszczędności na rachunkach za energię.
+              </p>
+            </li>
+            <li>
+              <h4>Bezpieczeństwo i niezawodność</h4>
+              <p>
+                System Loxone zapewnia wysoki poziom bezpieczeństwa dzięki
+                integracji monitoringu wideo, alarmów i innych środków ochrony,
+                chroniąc Twój dom i majątek przez całą dobę.
+              </p>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section id="Services">

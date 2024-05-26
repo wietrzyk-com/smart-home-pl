@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  color: #444444;
 }
 
 .btn {
@@ -14,6 +15,7 @@ body {
   padding: 10px 25px;
   text-decoration: none;
   border-radius: 100px;
+  color: white;
 }
 
 .center {
@@ -82,5 +84,57 @@ p {
   dt {
     font-size: 80%;
     font-weight: 200;
+  }
+}
+
+#WhyChooseUs {
+  padding: 32px 40px;
+
+  h2 {
+    color: #7d7d7d;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 200%;
+    line-height: 2.5rem;
+  }
+
+  .custom-list {
+    h4 {
+      border-top: 1px solid #d9d9d9;
+      padding-top: 0.8em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      font-size: 150%;
+    }
+
+    p {
+      color: #7d7d7d;
+    }
+    counter-reset: custom-counter;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .custom-list li {
+    counter-increment: custom-counter;
+    margin-bottom: 20px;
+    position: relative;
+    padding-top: 30px; /* Dostosuj w zależności od potrzeby */
+  }
+
+  .custom-list li::before {
+    content: counter(custom-counter, decimal-leading-zero) ".";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7d7d7d;
   }
 }
