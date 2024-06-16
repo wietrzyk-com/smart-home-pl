@@ -188,7 +188,7 @@ p {
   > div {
     display: grid;
     border-bottom: 1px solid #7d7d7d;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 5.5em auto;
     margin-bottom: 2em;
 
     grid-template-areas:
