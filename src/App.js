@@ -2,8 +2,10 @@ import menuImg from "./menu.png";
 import partner from "./silverPartnerLoxone.png";
 import servicesImg1 from "./services1.jpg";
 import servicesImg2 from "./services2.jpg";
+import { useState } from "react";
 
 function App() {
+  const [faqOpen, setFaqOpen] = useState(-1);
   return (
     <>
       <section id="HomePage">
@@ -172,14 +174,30 @@ function App() {
 
       <section id="Testimonials">
         <div>
-          <ul>
-            <li>
-              <h4>Ime Nazwisko</h4>
-              <img alt="" href="" />
-              //stars
-              <p>Ocena</p>
-            </li>
-          </ul>
+          <img alt="Person1" src={servicesImg1} />
+          <div>
+            <h4>Jakub Wietryk</h4>
+            <h5>Stanowisko</h5>
+          </div>
+          <p>
+            Ac natoque etiam aliquam elementum. Sapien vulputate nulla libero
+            mattis dictum. Habitasse nisi accumsan id eget faucibus arcu ut
+            neque. Facilisi amet augue eget quisque leo nec metus quis. Amet
+            diam donec leo justo lacus. Tortor ipsum.
+          </p>
+        </div>
+        <div>
+          <img alt="Person1" src={servicesImg1} />
+          <div>
+            <h4>Ime Nazwisko</h4>
+            <h5>Stanowisko</h5>
+          </div>
+          <p>
+            Ac natoque etiam aliquam elementum. Sapien vulputate nulla libero
+            mattis dictum. Habitasse nisi accumsan id eget faucibus arcu ut
+            neque. Facilisi amet augue eget quisque leo nec metus quis. Amet
+            diam donec leo justo lacus. Tortor ipsum.
+          </p>
         </div>
       </section>
 
@@ -187,18 +205,57 @@ function App() {
         <div>
           <h2>Pytania & odpowiedzi</h2>
           <h3>Często Zadavane Pytania</h3>
-          <ul>
-            <li>
-              <h4></h4>
-              <p></p>
+          <ul className="custom-list">
+            <li className={faqOpen === 0 ? "open" : "closed"}>
+              <h4>What is a Smart Home System?</h4>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  setFaqOpen(faqOpen === 0 ? -1 : 0);
+                }}
+                href="#"
+              >
+                +
+              </a>
+              <p>
+                Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
+                vulputate orci lacus gravida molestie habitant. Convallis massa
+                hac proin rutrum nisl habitasse. Amet etiam dignissim.
+              </p>
             </li>
-            <li>
-              <h4></h4>
-              <p></p>
+            <li className={faqOpen === 1 ? "open" : "closed"}>
+              <h4>How does a smart home system work?</h4>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  setFaqOpen(faqOpen === 1 ? -1 : 1);
+                }}
+                href="#"
+              >
+                +
+              </a>
+              <p>
+                Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
+                vulputate orci lacus gravida molestie habitant. Convallis massa
+                hac proin rutrum nisl habitasse. Amet etiam dignissim.
+              </p>
             </li>
-            <li>
-              <h4></h4>
-              <p></p>
+            <li className={faqOpen === 2 ? "open" : "closed"}>
+              <h4>Are smart home systems secure?</h4>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  setFaqOpen(faqOpen === 2 ? -1 : 2);
+                }}
+                href="#"
+              >
+                +
+              </a>
+              <p>
+                Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
+                vulputate orci lacus gravida molestie habitant. Convallis massa
+                hac proin rutrum nisl habitasse. Amet etiam dignissim.
+              </p>
             </li>
           </ul>
         </div>

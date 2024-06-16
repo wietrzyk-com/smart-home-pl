@@ -181,12 +181,134 @@ p {
 }
 
 #Testimonials {
-  padding: 1.9em 2.5em;
+  margin: 1.9em 2.5em;
+  padding: 3em 2em;
+  background-color: #8ad097a0;
+
+  > div {
+    display: grid;
+    border-bottom: 1px solid #7d7d7d;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 2em;
+
+    grid-template-areas:
+      "photo name"
+      "testimonial testimonial";
+    img {
+      grid-area: photo;
+      border-radius: 50%;
+      width: 4.5em;
+      height: 4.5em;
+      margin-right: 2em;
+    }
+
+    div {
+      grid-area: name;
+      margin-top: 1em;
+      line-height: 1.5em;
+
+      h4 {
+        font-size: 120%;
+      }
+
+      h5 {
+        color: #7d7d7d;
+      }
+    }
+
+    p {
+      margin-top: 1em;
+      grid-area: testimonial;
+    }
+  }
+
+  > div:last-child {
+    border: none;
+    margin-bottom: 0;
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
 
 #FAQ {
-  background-color: #ececec;
-  padding: 1.9em 2.5em;
+  padding: 3em 2.5em;
+  .custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    color: #7d7d7d;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+    font-size: 200%;
+    line-height: 2.5rem;
+  }
+
+  @keyframes rotate45 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(45deg);
+    }
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 1.9em;
+
+    a {
+      text-decoration: none;
+      align-self: center;
+      font-size: 250%;
+      color: #7d7d7d;
+      display: inline-block;
+      animation: rotate45 0.2s linear forwards;
+    }
+
+    h4 {
+      align-self: center;
+      font-size: 150%;
+      width: 90%;
+    }
+
+    p {
+      color: #7d7d7d;
+      width: 100%;
+      padding-top: 1.2em;
+    }
+  }
+
+  @keyframes rotate0 {
+    from {
+      transform: rotate(45deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  li.closed {
+    padding-bottom: 1.9em;
+    p {
+      display: none;
+    }
+
+    a {
+      animation: rotate0 0.2s linear forwards;
+    }
+  }
 }
 
 footer {
