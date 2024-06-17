@@ -204,7 +204,7 @@ function App() {
       <section id="FAQ">
         <div>
           <h2>Pytania & odpowiedzi</h2>
-          <h3>Często Zadavane Pytania</h3>
+          <h3>Często zadavane pytania</h3>
           <ul className="custom-list">
             <li className={faqOpen === 0 ? "open" : "closed"}>
               <h4>What is a Smart Home System?</h4>
@@ -269,9 +269,21 @@ function App() {
         </div>
 
         <div>
-          <a href="//">
-            <img alt="menu" src={menuImg} />
-          </a>
+          <ul>
+            <li>
+              <a href="">About Us</a>
+            </li>
+            <li>
+              <a href="">Our Services</a>
+            </li>
+            <li>
+              <a href="">Our Products</a>
+            </li>
+            <li>
+              <a href="#q">Contact us</a>
+            </li>
+          </ul>
+          <h2>Dane firmy</h2>
           <p>Jakub Wietrzyk</p>
           <p>
             Grodzka 14/2
@@ -286,6 +298,7 @@ function App() {
             Wrocław, Strzegom, Świdnica, <br />
             Wałbrzych, Oława
           </p>
+          <img alt="silver partner" src={partner} />
         </div>
       </footer>
     </>
