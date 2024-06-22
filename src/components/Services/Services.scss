@@ -36,4 +36,9 @@
     padding: 0;
     margin: 0;
   }
+
+  @media (min-device-width: 768px) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }

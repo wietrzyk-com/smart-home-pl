@@ -9,7 +9,7 @@ export default function HomePage() {
           <a href="/">smart</a>
         </h1>
         <a href="ff">
-          <img alt="menu" src={menuImg} />
+          <img alt="menu buttom" src={menuImg} />
         </a>
       </div>
       <div>

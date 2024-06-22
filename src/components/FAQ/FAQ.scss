@@ -19,6 +19,10 @@
     line-height: 2.5rem;
   }
 
+  > div:last-child {
+    padding-top: 2em;
+  }
+
   @keyframes rotate45 {
     from {
       transform: rotate(0deg);
@@ -74,6 +78,18 @@
 
     a {
       animation: rotate0 0.2s linear forwards;
+    }
+  }
+
+  @media (min-device-width: 768px) {
+    padding-left: 20%;
+    padding-right: 20%;
+
+    > div:last-child {
+      padding-top: 3em;
+      display: flex;
+      justify-content: right;
+      //text-align: center;
     }
   }
 }

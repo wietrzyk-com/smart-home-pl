@@ -58,5 +58,28 @@
   }
 
   @media (min-device-width: 768px) {
+    h1 {
+      margin: 0;
+
+      a {
+        font-size: 5vw;
+      }
+    }
+
+    img {
+      height: 4vw;
+      opacity: 0.62;
+    }
+
+    div > h2,
+    p {
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+
+    > div:last-child {
+      padding-left: 20%;
+      padding-right: 20%;
+    }
   }
 }

@@ -48,4 +48,9 @@
     font-weight: bold;
     color: #7d7d7d;
   }
+
+  @media (min-device-width: 768px) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }

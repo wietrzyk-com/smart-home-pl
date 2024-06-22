@@ -62,6 +62,14 @@ export default function FAQ() {
           </li>
         </ul>
       </div>
+      <div>
+        <p>Masz inne pytannia?</p>
+        <p>
+          <a className="btn" href="#q">
+            Contact us
+          </a>
+        </p>
+      </div>
     </section>
   );
 }
