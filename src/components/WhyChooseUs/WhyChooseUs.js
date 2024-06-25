@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
       <div>
         <h2>Dlaczego my?</h2>
         <h3>Zalety systemu Loxone</h3>
-        <p>
+        <p className="btnRight">
           <a className="btn" href="#Services">
             Learn more
           </a>

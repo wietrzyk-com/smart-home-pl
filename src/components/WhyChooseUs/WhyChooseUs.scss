@@ -49,8 +49,13 @@
     color: #7d7d7d;
   }
 
-  @media (min-device-width: 768px) {
+  @media (min-device-width: 769px) {
     padding-left: 20%;
     padding-right: 20%;
+
+    .btnRight {
+      text-align: right;
+      margin-top: -3em;
+    }
   }
 }

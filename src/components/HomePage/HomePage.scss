@@ -5,12 +5,13 @@
   a:active {
     color: white;
   }
-  //padding: 32px 40px;
+
   padding: 1.9em 2.5em;
 
   h1 {
     margin: 0;
     margin-top: -3vw;
+    margin-bottom: 6em;
     a {
       text-decoration: none;
       font-family: "Chilanka", cursive;
@@ -21,7 +22,6 @@
   }
 
   h2 {
-    margin-top: 3em;
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 0.5em;
@@ -57,17 +57,43 @@
     font-weight: 200;
   }
 
-  @media (min-device-width: 768px) {
+  ul {
+    li {
+      list-style: none;
+      padding-bottom: 1em;
+
+      a {
+        text-decoration: none;
+        font-family: "Chilanka", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5vw;
+        color: white;
+      }
+    }
+  }
+
+  @media (min-device-width: 769px) {
     h1 {
-      margin: 0;
+      //margin: 0;
+      margin-top: -1vw;
 
       a {
         font-size: 5vw;
       }
     }
 
+    ul > li > a {
+      text-decoration: none;
+      font-family: "Chilanka", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2vw;
+      color: white;
+    }
+
     img {
-      height: 4vw;
+      height: 3vw;
       opacity: 0.62;
     }
 
