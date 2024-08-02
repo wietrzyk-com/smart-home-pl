@@ -65,7 +65,7 @@ export default function FAQ() {
       <div>
         <p>Masz inne pytannia?</p>
         <p>
-          <a className="btn" href="#q">
+          <a className="btn" href="#contact-us">
             Contact us
           </a>
         </p>

@@ -3,7 +3,7 @@ import "./WhyChooseUs.scss";
 export default function WhyChooseUs() {
   return (
     <section id="WhyChooseUs">
-      <div>
+      <div id="about-us">
         <h2>Dlaczego my?</h2>
         <h3>Zalety systemu Loxone</h3>
         <p className="btnRight">

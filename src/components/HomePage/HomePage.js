@@ -25,16 +25,16 @@ export default function HomePage() {
         {isListVisible && (
           <ul>
             <li>
-              <a href="">About Us</a>
+              <a href="#about-us">About Us</a>
             </li>
             <li>
-              <a href="">Our Services</a>
+              <a href="#our-services">Our Services</a>
             </li>
             <li>
-              <a href="">Our Products</a>
+              <a href="#our-products">Our Products</a>
             </li>
             <li>
-              <a href="#q">Contact us</a>
+              <a href="#contact-us">Contact us</a>
             </li>
           </ul>
         )}
@@ -47,7 +47,7 @@ export default function HomePage() {
           nullam auctor lacinia nisi.
         </p>
         <p className="center">
-          <a className="btn" href="#q">
+          <a className="btn" href="#contact-us">
             Contact us
           </a>
         </p>

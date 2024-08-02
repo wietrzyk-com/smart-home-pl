@@ -5,7 +5,7 @@ import servicesImg2 from "./services2.jpg";
 export default function Services() {
   return (
     <section id="Services">
-      <div>
+      <div id="our-services">
         <h2>Our services</h2>
         <h3>Smart home</h3>
         <ul className="custom-list">

@@ -13,16 +13,16 @@ export default function Footer() {
       <div>
         <ul>
           <li>
-            <a href="">About Us</a>
+            <a href="#about-us">About Us</a>
           </li>
           <li>
-            <a href="">Our Services</a>
+            <a href="#our-services">Our Services</a>
           </li>
           <li>
-            <a href="">Our Products</a>
+            <a href="#our-products">Our Products</a>
           </li>
           <li>
-            <a href="#q">Contact us</a>
+            <a href="#contact-us">Contact us</a>
           </li>
         </ul>
         <h2>Dane firmy</h2>
