@@ -4,12 +4,38 @@ import { useState } from "react";
 const questions = [
   {
     title: 'Ile to kosztuje?',
-    body: <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
+    body: (<>
+      <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
     vulputate orci lacus gravida molestie habitant. Convallis massa
     hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
+    <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
+    vulputate orci lacus gravida molestie habitant. Convallis massa
+    hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
+    <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
+    vulputate orci lacus gravida molestie habitant. Convallis massa
+    hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
+    </>)
+  },
+  {
+    title: 'Czy instalację moze wykonać mój elektryk?',
+    body: <p>Convallis massa hac proin rutrum nisl habitasse. Tortor arcu 
+    eleifend nec massa dictum purus. Erat varius
+    vulputate orci lacus gravida molestie habitant. Amet etiam dignissim.</p>
   },
   {
     title: 'Co w pierwszej kolejności automatyzować?',
+    body: <p>Convallis massa hac proin rutrum nisl habitasse. Tortor arcu 
+    eleifend nec massa dictum purus. Erat varius
+    vulputate orci lacus gravida molestie habitant. Amet etiam dignissim.</p>
+  },
+  {
+    title: 'Mam developera - czy mogę mieć inteligentny dom?',
+    body: <p>Convallis massa hac proin rutrum nisl habitasse. Tortor arcu 
+    eleifend nec massa dictum purus. Erat varius
+    vulputate orci lacus gravida molestie habitant. Amet etiam dignissim.</p>
+  },
+  {
+    title: 'Chcę zbudować inteligentny dom sam, czy mogę liczyć na pomoc?',
     body: <p>Convallis massa hac proin rutrum nisl habitasse. Tortor arcu 
     eleifend nec massa dictum purus. Erat varius
     vulputate orci lacus gravida molestie habitant. Amet etiam dignissim.</p>
