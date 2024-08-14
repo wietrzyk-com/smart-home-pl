@@ -23,7 +23,7 @@ export default function Services() {
               zależności od obecności mieszkańców i pogody, co zwiększa komfort
               i redukuje zużycie energii.
             </p>
-            <img alt="" src={servicesImg1} />
+            <img alt="q" src={servicesImg1} />
           </li>
           <li>
             <h4>Aplikacja</h4>
@@ -31,7 +31,7 @@ export default function Services() {
               Bezpłatna aplikacja do sterowania domem dostępna na wszystkie
               systemy.
             </p>
-            <img alt="" src={servicesImg2} />
+            <img alt="q" src={servicesImg2} />
           </li>
           <li>
             <h4>Dostęp</h4>
@@ -40,7 +40,7 @@ export default function Services() {
               Udostępniaj tymczasowe kody kurierowi lub firmie sprzątającej.
               Otwieraj drzwi zdalnie dzięki integracji z wideodomofonem.
             </p>
-            <img alt="" src={servicesImg1} />
+            <img alt="q" src={servicesImg1} />
           </li>
           <li>
             <h4>Oświetlenie</h4>
@@ -49,7 +49,7 @@ export default function Services() {
               świetlną. Czujnik obecności wykrywa ruch i hałas, a poziom
               oświetlenia automatycznie dostosuję się do jasności pomieszczenia.
             </p>
-            <img alt="" src={servicesImg2} />
+            <img alt="q" src={servicesImg2} />
           </li>
           <li>
             <h4>Jeden włącznik</h4>
@@ -60,7 +60,7 @@ export default function Services() {
               termostatów w pokojach ani paneli z wieloma przyciskami. The one
               to rule them all!
             </p>
-            <img alt="" src={servicesImg1} />
+            <img alt="q" src={servicesImg1} />
           </li>
           <li>
             <h4>Multimedia</h4>
@@ -71,7 +71,7 @@ export default function Services() {
               suficie lub na ścianie. System audio można wykorzystać również do
               odtwarzania komunikatów, dzwonka do drzwi i alarmów.
             </p>
-            <img alt="" src={servicesImg2} />
+            <img alt="q" src={servicesImg2} />
           </li>
           <li>
             <h4>Projektowanie instalacji elektrycznych</h4>
@@ -86,7 +86,7 @@ export default function Services() {
               Profesjonalne projektowanie zapewnia niezawodność, bezpieczeństwo
               i zgodność z normami technicznymi.
             </p>
-            <img alt="" src={servicesImg2} />
+            <img alt="q" src={servicesImg2} />
           </li>
           <li>
             <h4>Zarzadzanie energia elektryczna w budynkach komercyjnych</h4>
@@ -101,7 +101,7 @@ export default function Services() {
               Profesjonalne projektowanie zapewnia niezawodność, bezpieczeństwo
               i zgodność z normami technicznymi.
             </p>
-            <img aly="" src={servicesImg1} />
+            <img alt="q" src={servicesImg1} />
           </li>
           <li>
             <h4>Systemy zarzadzania budynkami komercyjnymi</h4>
@@ -116,7 +116,7 @@ export default function Services() {
               co prowadzi do oszczędności kosztów i zrównoważonego rozwoju
               budynku.
             </p>
-            <img alt="" src={servicesImg2} />
+            <img alt="q" src={servicesImg2} />
           </li>
         </ul>
       </div>

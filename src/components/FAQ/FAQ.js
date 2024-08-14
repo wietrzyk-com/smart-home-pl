@@ -16,7 +16,7 @@ export default function FAQ() {
                 e.preventDefault();
                 setFaqOpen(faqOpen === 0 ? -1 : 0);
               }}
-              href="#"
+              href="#FAQ1"
             >
               +
             </a>
@@ -33,7 +33,7 @@ export default function FAQ() {
                 e.preventDefault();
                 setFaqOpen(faqOpen === 1 ? -1 : 1);
               }}
-              href="#"
+              href="#FAQ2"
             >
               +
             </a>
@@ -50,7 +50,7 @@ export default function FAQ() {
                 e.preventDefault();
                 setFaqOpen(faqOpen === 2 ? -1 : 2);
               }}
-              href="#"
+              href="#FAQ3"
             >
               +
             </a>
