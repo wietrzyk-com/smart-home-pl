@@ -1,6 +1,6 @@
 import menuImg from "./menu.png";
 import "./HomePage.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function HomePage() {
   const [isLinkVisible, setLinkVisible] = useState(true);
@@ -15,6 +15,16 @@ export default function HomePage() {
     setLinkVisible(true);
     setListVisible(false);
   };
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const section = document.querySelector(hash);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
 
   return (
     <section id="HomePage">
