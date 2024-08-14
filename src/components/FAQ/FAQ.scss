@@ -42,6 +42,7 @@
 
     a {
       text-decoration: none;
+      outline: none;
       align-self: center;
       font-size: 250%;
       color: #7d7d7d;
@@ -49,16 +50,28 @@
       animation: rotate45 0.2s linear forwards;
     }
 
+    a:focus,
+    a:active {
+      outline: none; /* Removes the focus and active state outline */
+      box-shadow: none; /* Removes any default box-shadow applied */
+      -webkit-tap-highlight-color: transparent; /* Removes the tap highlight color on mobile */
+    }
+
     h4 {
       align-self: center;
       font-size: 150%;
       width: 90%;
+      padding-bottom: 1.2em;
     }
 
     p {
       color: #7d7d7d;
       width: 100%;
-      padding-top: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    p:last-child {
+      margin-bottom: 2em;
     }
   }
 
