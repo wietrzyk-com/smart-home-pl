@@ -30,45 +30,39 @@ export default function HomePage() {
         {isListVisible && (
           <ul>
             <li>
-              <a href="#about-us" onClick={handleItemClick}>
-                About Us
-              </a>
+              <a href="#about-us">Dlaczego my?</a>
             </li>
             <li>
-              <a href="#our-services" onClick={handleItemClick}>
-                Our Services
-              </a>
+              <a href="#our-services">Usługi</a>
             </li>
             <li>
-              <a href="#our-products" onClick={handleItemClick}>
-                Our Products
-              </a>
+              <a href="#our-products">Produkty</a>
             </li>
             <li>
-              <a href="#contact-us" onClick={handleItemClick}>
-                Contact us
-              </a>
+              <a href="#contact-us">Kontakt</a>
             </li>
           </ul>
         )}
       </div>
       <div>
-        <h2>Welcome to a Smarter Home Experience.</h2>
-        <p>Inteligentny dom, który nie przeszkadza.</p>
+        <h2>Inteligentne domy</h2>
+        <p>Wygoda i realne oszczędności dla Twojego domu, biura, firmy.</p>
         <p className="center">
           <a className="btn" href="#contact-us">
-            Contact us
+            Skontaktuj się
           </a>
         </p>
       </div>
       <div>
         <dl>
-          <dd>50+</dd>
+          <dd>20+</dd>
           <dt>zrealizowanych projektow</dt>
         </dl>
         <dl>
-          <dd>10+</dd>
-          <dt>czegos innego</dt>
+          <dd>
+            <small>do</small> 38%
+          </dd>
+          <dt>mnejsze rachunki</dt>
         </dl>
       </div>
     </section>
