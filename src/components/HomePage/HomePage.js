@@ -5,10 +5,15 @@ import { useState } from "react";
 export default function HomePage() {
   const [isLinkVisible, setLinkVisible] = useState(true);
   const [isListVisible, setListVisible] = useState(false);
-  const handleClick = (e) => {
+  const handleMenuClick = (e) => {
     e.preventDefault();
     setLinkVisible(false);
     setListVisible(true);
+  };
+
+  const handleItemClick = () => {
+    setLinkVisible(true);
+    setListVisible(false);
   };
 
   return (
@@ -18,23 +23,31 @@ export default function HomePage() {
           <a href="/">smart</a>
         </h1>
         {isLinkVisible && (
-          <a href="ff" onClick={handleClick}>
+          <a href="ff" onClick={handleMenuClick}>
             <img alt="menu button" src={menuImg} />
           </a>
         )}
         {isListVisible && (
           <ul>
             <li>
-              <a href="#about-us">About Us</a>
+              <a href="#about-us" onClick={handleItemClick}>
+                About Us
+              </a>
             </li>
             <li>
-              <a href="#our-services">Our Services</a>
+              <a href="#our-services" onClick={handleItemClick}>
+                Our Services
+              </a>
             </li>
             <li>
-              <a href="#our-products">Our Products</a>
+              <a href="#our-products" onClick={handleItemClick}>
+                Our Products
+              </a>
             </li>
             <li>
-              <a href="#contact-us">Contact us</a>
+              <a href="#contact-us" onClick={handleItemClick}>
+                Contact us
+              </a>
             </li>
           </ul>
         )}
