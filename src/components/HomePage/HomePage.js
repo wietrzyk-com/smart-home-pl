@@ -41,11 +41,7 @@ export default function HomePage() {
       </div>
       <div>
         <h2>Welcome to a Smarter Home Experience.</h2>
-        <p>
-          Purus pellentesque sed enim pharetra. Et elit egestas vitae in ut
-          vitae. Cras pulvinar massa ut amet egestas in proin. In hendrerit amet
-          nullam auctor lacinia nisi.
-        </p>
+        <p>Inteligentny dom, który nie przeszkadza.</p>
         <p className="center">
           <a className="btn" href="#contact-us">
             Contact us
