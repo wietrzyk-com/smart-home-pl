@@ -6,15 +6,12 @@ const questions = [
   {
     title: 'Ile to kosztuje?',
     body: <>
-      <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
-    vulputate orci lacus gravida molestie habitant. Convallis massa
-    hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
-    <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
-    vulputate orci lacus gravida molestie habitant. Convallis massa
-    hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
-    <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
-    vulputate orci lacus gravida molestie habitant. Convallis massa
-    hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
+      <p>
+        Automatyzacja ogrzewania w małym budynku to koszt kilku tysiecy złotych, jednak oszczędności będą widoczne już na pierwszym rachunku za ogrzewanie, a komfort znacznie się poprawi.
+      </p>
+      <p>
+        Im więcej systemów integrujemy tym większe koszty w sprzęcie Loxone, ale też większe oszczędności. Typowa inwestycja w dom jednorodzinny to koszt w granicach 35 tys. zł, wersja luksusowa z oświetleniem od Loxone i absolutnie wszyskimi udogodnieniami zwykle zamyka się w 150 tys. zł.
+      </p>
     </>
   },
   {
