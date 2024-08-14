@@ -10,58 +10,60 @@ export default function Services() {
         <h3></h3>
         <ul className="custom-list">
           <li>
-            <h4>Inteligentne domy</h4>
+            <h4>Oświetlenie</h4>
             <p>
-              Inteligentne domy, znane jako smart home, to nowoczesne
-              technologie integrujące różnorodne systemy i urządzenia w jednym
-              ekosystemie. Dzięki technologiom IoT, oferują wygodę, oszczędności
-              energetyczne i podwyższony poziom bezpieczeństwa. Automatyzują
-              codzienne zadania, takie jak sterowanie oświetleniem, ogrzewaniem
-              i klimatyzacją. Czujniki i połączenia internetowe umożliwiają
-              komunikację urządzeń, analizę danych i reakcję na zmiany w czasie
-              rzeczywistym. Inteligentne termostaty dostosowują temperaturę w
-              zależności od obecności mieszkańców i pogody, co zwiększa komfort
-              i redukuje zużycie energii.
+              Oświetlenie zapala się przy wejściu do pomieszczenia i gaśnie gdy pomieszczenie opuszczasz. Czujnik obecności wykrywa ruch, dźwięk i światło. W nocy, kiedy poruszasz się po domu oświetlenie nocne pokazuje Ci drogę przy pomocy przyjemnego, przeyciemnonego światła.
+            </p>
+            <p>
+              Jasność oświetlenia moze być automatycznie dostosowana do pory dnia. Jezeli zdecydujesz się na oświetlenie RGBW od Loxone to w zaleznosci od pory dnia swiatlo bedzie mialo tez odpowiednią temperaturę bieli.
+            </p>
+            <p>
+              Gdy nie ma Cię w domu system symuluję obecność w wybranych pomieszczeniach włączając losowe sceny świetlne i włączając muzykę.
             </p>
             <img alt="q" src={servicesImg1} />
           </li>
           <li>
-            <h4>Aplikacja</h4>
+            <h4>Ogrzewanie</h4>
             <p>
-              Bezpłatna aplikacja do sterowania domem dostępna na wszystkie
-              systemy.
+              Moesz mieć indywidualną temperaturę w kadym pomieszczeniu, jedną na dzień,
+               inną na noc. Kiedy pracujesz dłuzej system automatycznie przedluzy czas ogrzewania. System nauczy się bezwładności cieplnej Twojego budynku i upewni się, ze temperatura komforotwa bedzie przygotowana we wlasciwym czasie.
+            </p>
+            <p>
+              System ograniczy marnotrawienie energii na ogrzewanie w przypadku, kiedy okna w pomieszczeniu są odtwarte przez dłuszy czas.
+            </p>
+            <p>
+              Kiedy nie ma Cię w pomieszczeniu automatycznie zamknie lub otworzy rolete aby wykorzystac swiatlo sloneczne do ogrzewania.
+            </p>
+            <p>
+              Kiedy wyjedziesz na dluzej system zadba o to aby zabezpieczyc Twój dom i oszczędzać energię. Wystarczy jedno kliknięcie i dom przełączy się w tryb Hibrnacji.
             </p>
             <img alt="q" src={servicesImg2} />
           </li>
+          
+          <li>
+            <h4>Podlewanie</h4>
+            <p>
+              Nie potrzebujesz skomplikowanego systemu podlewania. W polaczeniu z informacjami o pogodzie
+              ze stacji pogodowej lub z internetowego serwisu pogodowego system zdecyduje czy warto podlewać
+              ogród.
+            </p>
+            <p>
+              Do uruchomienia podlewania wystarczy zasilanie w wode i skrzynka z elektrozaworami w ogrodzie. Resztą zajmie się system.
+            </p>
+            <img alt="q" src={servicesImg2} />
+          </li>
+
           <li>
             <h4>Dostęp</h4>
             <p>
               Otwieraj furtki, bramy i drzwi za pomocą kodu lub breloczka NFC.
               Udostępniaj tymczasowe kody kurierowi lub firmie sprzątającej.
-              Otwieraj drzwi zdalnie dzięki integracji z wideodomofonem.
+              Otwieraj furtki, bramy, drzwi zdalnie dzięki integracji z wideodomofonem.
             </p>
             <img alt="q" src={servicesImg1} />
           </li>
-          <li>
-            <h4>Oświetlenie</h4>
-            <p>
-              OWejście do pomieszczenia automatycznie uaktywnia ulubioną scenę
-              świetlną. Czujnik obecności wykrywa ruch i hałas, a poziom
-              oświetlenia automatycznie dostosuję się do jasności pomieszczenia.
-            </p>
-            <img alt="q" src={servicesImg2} />
-          </li>
-          <li>
-            <h4>Jeden włącznik</h4>
-            <p>
-              Wystarczy jeden włącznik Loxone w każdym pomieszczeniu aby
-              sterować światłem, zacienieniem, temperaturą i muzyką w
-              pomieszczeniu. Nie potrzebujesz już pilotów do klimatyzacji,
-              termostatów w pokojach ani paneli z wieloma przyciskami. The one
-              to rule them all!
-            </p>
-            <img alt="q" src={servicesImg1} />
-          </li>
+
+          
           <li>
             <h4>Multimedia</h4>
             <p>
@@ -70,21 +72,6 @@ export default function Services() {
               systemowe głośniki z możliwością zainstalowania w podwieszanym
               suficie lub na ścianie. System audio można wykorzystać również do
               odtwarzania komunikatów, dzwonka do drzwi i alarmów.
-            </p>
-            <img alt="q" src={servicesImg2} />
-          </li>
-          <li>
-            <h4>Projektowanie instalacji elektrycznych</h4>
-            <p>
-              Projektowanie instalacji elektrycznych obejmuje tworzenie planów i
-              schematów, które zapewniają bezpieczne i efektywne dostarczanie
-              energii elektrycznej w budynkach. Proces ten uwzględnia wymagania
-              dotyczące obciążenia, zabezpieczeń, zgodność z przepisami oraz
-              przyszłe potrzeby użytkowników. Kluczowe etapy to analiza potrzeb,
-              dobór odpowiednich komponentów, rozmieszczenie przewodów i
-              urządzeń, a także opracowanie schematów elektrycznych.
-              Profesjonalne projektowanie zapewnia niezawodność, bezpieczeństwo
-              i zgodność z normami technicznymi.
             </p>
             <img alt="q" src={servicesImg2} />
           </li>
