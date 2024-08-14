@@ -2,11 +2,33 @@
   padding: 3em 2.5em;
   //background-color: #ececec;
   .alertMessage {
+    text-align: center;
     h3 {
       margin-top: 0.5em;
       margin-bottom: 1.2em;
       font-size: 200%;
       line-height: 2.5rem;
+    }
+
+    p {
+      color: #7d7d7d;
+      width: 100%;
+      padding-top: 1.2em;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Chilanka", cursive;
+      color: red;
+    }
+    a:hover {
+      color: #00a21ea0;
+    }
+  }
+
+  .alertMessage.error {
+    h3 {
+      color: red;
     }
   }
 
