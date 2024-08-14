@@ -24,7 +24,6 @@ export default function ContactUs() {
     const phoneNumber = formData.phoneOrEmail;
     try {
       const parsedNumber = parsePhoneNumber(phoneNumber, "PL");
-      console.log({ phoneNumber, parsedNumber });
       return parsedNumber && isValidNumber(phoneNumber, "PL");
     } catch (e) {
       return false;
@@ -34,6 +33,15 @@ export default function ContactUs() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const scrollToAlert = () => {
+    setTimeout(() => {
+      const section = document.querySelector(".alertMessage");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 500);
   };
 
   const handleSubmit = (e) => {
@@ -57,7 +65,6 @@ export default function ContactUs() {
       return;
     }
 
-    console.log("Form submitted", formData);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -67,19 +74,23 @@ export default function ContactUs() {
       }).toString(),
     })
       .then((result) => {
+        scrollToAlert();
         if (result.status !== 200) {
           return setFormState("error");
         }
         setFormState("success");
       })
-      .catch((error) => setFormState("error"));
+      .catch((error) => {
+        setFormState("error");
+        scrollToAlert();
+      });
   };
 
   return (
     <section id="ContactUs">
       <div id="contact-us">
         {formState === "success" && (
-          <div class="alertMessage success">
+          <div className="alertMessage success">
             <h3>Wiadomosc wyslana</h3>
             <p>
               Dziekujemy za wyslanie wiadomosci - odezwiemy sie do Panstwa
@@ -88,7 +99,7 @@ export default function ContactUs() {
           </div>
         )}
         {formState === "error" && (
-          <div class="alertMessage error">
+          <div className="alertMessage error">
             <h3>Blad wysylania wiadomosci</h3>
             <p>
               Z jakiegos powodu nie udalo sie wyslac wiadomosci. Prosimy o
