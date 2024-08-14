@@ -1,6 +1,21 @@
 import "./FAQ.scss";
 import { useState } from "react";
 
+const questions = [
+  {
+    title: 'Ile to kosztuje?',
+    body: <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
+    vulputate orci lacus gravida molestie habitant. Convallis massa
+    hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
+  },
+  {
+    title: 'Co w pierwszej kolejności automatyzować?',
+    body: <p>Convallis massa hac proin rutrum nisl habitasse. Tortor arcu 
+    eleifend nec massa dictum purus. Erat varius
+    vulputate orci lacus gravida molestie habitant. Amet etiam dignissim.</p>
+  }
+]
+
 export default function FAQ() {
   const [faqOpen, setFaqOpen] = useState(-1);
   return (
