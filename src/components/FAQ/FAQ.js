@@ -1,10 +1,11 @@
 import "./FAQ.scss";
 import { useState } from "react";
 
+// eslint-disable-next-line
 const questions = [
   {
     title: 'Ile to kosztuje?',
-    body: (<>
+    body: <>
       <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
     vulputate orci lacus gravida molestie habitant. Convallis massa
     hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
@@ -14,7 +15,7 @@ const questions = [
     <p>Vitae tortor arcu eleifend nec massa dictum purus. Erat varius
     vulputate orci lacus gravida molestie habitant. Convallis massa
     hac proin rutrum nisl habitasse. Amet etiam dignissim.</p>
-    </>)
+    </>
   },
   {
     title: 'Czy instalację moze wykonać mój elektryk?',
@@ -44,12 +45,16 @@ const questions = [
 
 export default function FAQ() {
   const [faqOpen, setFaqOpen] = useState(-1);
+
+ 
   return (
     <section id="FAQ">
       <div>
         <h2>Pytania & odpowiedzi</h2>
         <h3>Często zadavane pytania</h3>
         <ul className="custom-list">
+          { // TODO: quesions.forEach(....)
+          }
           <li className={faqOpen === 0 ? "open" : "closed"}>
             <h4>What is a Smart Home System?</h4>
             <a

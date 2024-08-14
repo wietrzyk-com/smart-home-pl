@@ -7,7 +7,7 @@ export default function Services() {
     <section id="Services">
       <div id="our-services">
         <h2>Co mozna zautomatyzować?</h2>
-        <h3></h3>
+        {/* <h3></h3> */}
         <ul className="custom-list">
           <li>
             <h4>Oświetlenie</h4>
