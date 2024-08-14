@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./ContactUs.scss";
 
 export default function ContactUs() {
+  const [formState, setFormState] = useState("default");
+
   const [formData, setFormData] = useState({
     name: "",
     phoneOrEmail: "",
@@ -28,6 +30,7 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log({ formData });
     if (!formData.phoneOrEmail) {
       setErrors({
         ...errors,
@@ -37,55 +40,90 @@ export default function ContactUs() {
     }
 
     console.log("Form submitted", formData);
-    // Додайте свій код для обробки відправлення форми
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        ...formData,
+        "form-name": "contact",
+      }).toString(),
+    })
+      .then((result) => {
+        if (result.status !== 200) {
+          return setFormState("error");
+        }
+        setFormState("success");
+      })
+      .catch((error) => setFormState("error"));
   };
 
   return (
     <section id="ContactUs">
       <div id="contact-us">
-        <form onSubmit={handleSubmit} className="contact-form">
-          <h2>Contact Information</h2>
+        {formState === "success" && (
+          <div class="alertMessage success">
+            <h3>Wiadomosc wyslana</h3>
+            <p>
+              Dziekujemy za wyslanie wiadomosci - odezwiemy sie do Panstwa
+              najszybciej jak bedzie to mozliwe!
+            </p>
+          </div>
+        )}
+        {formState === "error" && (
+          <div class="alertMessage error">
+            <h3>Blad wysylania wiadomosci</h3>
+            <p>
+              Z jakiegos powodu nie udalo sie wyslac wiadomosci. Prosimy o
+              kontakt email <a href="mailto:smart@hyte.pl">smart@hyte.pl</a> lub
+              telefoniczny na nr <a href="callto:+48729086677">729 086 677</a>
+            </p>
+          </div>
+        )}
+        {formState === "default" && (
+          <form onSubmit={handleSubmit} className="contact-form">
+            <h2>Contact Information</h2>
 
-          <label>
-            Name
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Name"
-            />
-          </label>
+            <label>
+              Name
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Name"
+              />
+            </label>
 
-          <label>
-            Phone number or Email *
-            <input
-              type="text"
-              name="phoneOrEmail"
-              value={formData.phoneOrEmail}
-              onChange={handleChange}
-              placeholder="Phone number or Email"
-              required
-            />
-            {errors.phoneOrEmail && (
-              <span className="error">{errors.phoneOrEmail}</span>
-            )}
-          </label>
+            <label>
+              Phone number or Email *
+              <input
+                type="text"
+                name="phoneOrEmail"
+                value={formData.phoneOrEmail}
+                onChange={handleChange}
+                placeholder="Phone number or Email"
+                required
+              />
+              {errors.phoneOrEmail && (
+                <span className="error">{errors.phoneOrEmail}</span>
+              )}
+            </label>
 
-          <label>
-            Comments
-            <textarea
-              name="comments"
-              value={formData.comments}
-              onChange={handleChange}
-              placeholder="Comments"
-            ></textarea>
-          </label>
+            <label>
+              Comments
+              <textarea
+                name="comments"
+                value={formData.comments}
+                onChange={handleChange}
+                placeholder="Comments"
+              ></textarea>
+            </label>
 
-          <a className="btn" href="#q">
-            Submit
-          </a>
-        </form>
+            <a onClick={handleSubmit} className="btn" href="#q">
+              Submit
+            </a>
+          </form>
+        )}
       </div>
     </section>
   );

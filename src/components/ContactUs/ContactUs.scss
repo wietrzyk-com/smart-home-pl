@@ -1,6 +1,14 @@
 #ContactUs {
   padding: 3em 2.5em;
   //background-color: #ececec;
+  .alertMessage {
+    h3 {
+      margin-top: 0.5em;
+      margin-bottom: 1.2em;
+      font-size: 200%;
+      line-height: 2.5rem;
+    }
+  }
 
   .contact-form {
     max-width: 400px;
