@@ -52,8 +52,7 @@ export default function ContactUs() {
     } else {
       setErrors({
         ...errors,
-        phoneOrEmail: "Pod
-        aj prawidlowy nr telefonu albo email",
+        phoneOrEmail: "Podaj prawidlowy nr telefonu albo email",
       });
       return;
     }
