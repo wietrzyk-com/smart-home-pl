@@ -30,16 +30,24 @@ export default function HomePage() {
         {isListVisible && (
           <ul>
             <li>
-              <a href="#about-us">Dlaczego my?</a>
+              <a href="#about-us" onClick={handleItemClick}>
+                Dlaczego my?
+              </a>
             </li>
             <li>
-              <a href="#our-services">Usługi</a>
+              <a href="#our-services" onClick={handleItemClick}>
+                Usługi
+              </a>
             </li>
             <li>
-              <a href="#our-products">Produkty</a>
+              <a href="#our-products" onClick={handleItemClick}>
+                Produkty
+              </a>
             </li>
             <li>
-              <a href="#contact-us">Kontakt</a>
+              <a href="#contact-us" onClick={handleItemClick}>
+                Kontakt
+              </a>
             </li>
           </ul>
         )}
