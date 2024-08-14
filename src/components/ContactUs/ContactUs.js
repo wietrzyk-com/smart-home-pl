@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./ContactUs.scss";
+import validator from "validator";
+import { isValidNumber, parsePhoneNumber } from "libphonenumber-js";
 
 export default function ContactUs() {
   const [formState, setFormState] = useState("default");
@@ -14,27 +16,44 @@ export default function ContactUs() {
     phoneOrEmail: "",
   });
 
+  const validateEmail = () => {
+    return validator.isEmail(formData.phoneOrEmail);
+  };
+
+  const validatePhone = () => {
+    const phoneNumber = formData.phoneOrEmail;
+    try {
+      const parsedNumber = parsePhoneNumber(phoneNumber, "PL");
+      console.log({ phoneNumber, parsedNumber });
+      return parsedNumber && isValidNumber(phoneNumber, "PL");
+    } catch (e) {
+      return false;
+    }
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-
-    if (name === "phoneOrEmail" && !value) {
-      setErrors({
-        ...errors,
-        phoneOrEmail: "Phone number or Email is required",
-      });
-    } else {
-      setErrors({ ...errors, phoneOrEmail: "" });
-    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ formData });
+
     if (!formData.phoneOrEmail) {
       setErrors({
         ...errors,
         phoneOrEmail: "Phone number or Email is required",
+      });
+      return;
+    }
+
+    if (validateEmail() || validatePhone()) {
+      setErrors({ ...errors, phoneOrEmail: "" });
+    } else {
+      setErrors({
+        ...errors,
+        phoneOrEmail: "Pod
+        aj prawidlowy nr telefonu albo email",
       });
       return;
     }
