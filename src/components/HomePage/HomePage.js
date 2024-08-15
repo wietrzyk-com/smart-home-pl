@@ -1,6 +1,7 @@
 import menuImg from "./menu.png";
 import "./HomePage.scss";
 import { useState, useEffect } from "react";
+import logoWhite from "./logoWhite.svg";
 
 export default function HomePage() {
   const [isLinkVisible, setLinkVisible] = useState(true);
@@ -29,9 +30,9 @@ export default function HomePage() {
   return (
     <section id="HomePage">
       <div>
-        <h1>
-          <a href="/">smart</a>
-        </h1>
+        <a href="/">
+          <img class="logo" alt="logo" src={logoWhite} />
+        </a>
         {isLinkVisible && (
           <a href="ff" onClick={handleMenuClick}>
             <img alt="menu button" src={menuImg} />
@@ -62,6 +63,7 @@ export default function HomePage() {
           </ul>
         )}
       </div>
+      <h1>Smart.hyte.pl</h1>
       <div>
         <h2>Inteligentne domy</h2>
         <p>Wygoda i realne oszczędności dla Twojego domu, biura, firmy.</p>

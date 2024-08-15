@@ -1,13 +1,14 @@
 import "./Footer.scss";
 import partner from "./silverPartnerLoxone.png";
+import logoWhite from "./logoWhite.svg";
 
 export default function Footer() {
   return (
     <footer>
       <div>
-        <h1>
-          <a href="/">smart</a>
-        </h1>
+        <a href="/">
+          <img alt="logo" src={logoWhite} />
+        </a>
       </div>
 
       <div>
