@@ -5,6 +5,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Posts from "./components/Posts/Posts";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       <FAQ />
 
       <ContactUs />
+
+      <Posts />
 
       <Footer />
     </>

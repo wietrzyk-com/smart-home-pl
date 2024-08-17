@@ -12,43 +12,60 @@ export default function Services() {
           <li>
             <h4>Oświetlenie</h4>
             <p>
-              Oświetlenie zapala się przy wejściu do pomieszczenia i gaśnie gdy pomieszczenie opuszczasz. Czujnik obecności wykrywa ruch, dźwięk i światło. W nocy, kiedy poruszasz się po domu oświetlenie nocne pokazuje Ci drogę przy pomocy przyjemnego, przeyciemnonego światła.
+              Oświetlenie zapala się przy wejściu do pomieszczenia i gaśnie gdy
+              pomieszczenie opuszczasz. Czujnik obecności wykrywa ruch, dźwięk i
+              światło. W nocy, kiedy poruszasz się po domu oświetlenie nocne
+              pokazuje Ci drogę przy pomocy przyjemnego, przeyciemnonego
+              światła.
             </p>
             <p>
-              Jasność oświetlenia moze być automatycznie dostosowana do pory dnia. Jezeli zdecydujesz się na oświetlenie RGBW od Loxone to w zaleznosci od pory dnia swiatlo bedzie mialo tez odpowiednią temperaturę bieli.
+              Jasność oświetlenia moze być automatycznie dostosowana do pory
+              dnia. Jezeli zdecydujesz się na oświetlenie RGBW od Loxone to w
+              zaleznosci od pory dnia swiatlo bedzie mialo tez odpowiednią
+              temperaturę bieli.
             </p>
             <p>
-              Gdy nie ma Cię w domu system symuluję obecność w wybranych pomieszczeniach włączając losowe sceny świetlne i włączając muzykę.
+              Gdy nie ma Cię w domu system symuluję obecność w wybranych
+              pomieszczeniach włączając losowe sceny świetlne i włączając
+              muzykę.
             </p>
             <img alt="q" src={servicesImg1} />
           </li>
           <li>
             <h4>Ogrzewanie</h4>
             <p>
-              Moesz mieć indywidualną temperaturę w kadym pomieszczeniu, jedną na dzień,
-               inną na noc. Kiedy pracujesz dłuzej system automatycznie przedluzy czas ogrzewania. System nauczy się bezwładności cieplnej Twojego budynku i upewni się, ze temperatura komforotwa bedzie przygotowana we wlasciwym czasie.
+              Moesz mieć indywidualną temperaturę w kadym pomieszczeniu, jedną
+              na dzień, inną na noc. Kiedy pracujesz dłuzej system automatycznie
+              przedluzy czas ogrzewania. System nauczy się bezwładności cieplnej
+              Twojego budynku i upewni się, ze temperatura komforotwa bedzie
+              przygotowana we wlasciwym czasie.
             </p>
             <p>
-              System ograniczy marnotrawienie energii na ogrzewanie w przypadku, kiedy okna w pomieszczeniu są odtwarte przez dłuszy czas.
+              System ograniczy marnotrawienie energii na ogrzewanie w przypadku,
+              kiedy okna w pomieszczeniu są odtwarte przez dłuszy czas.
             </p>
             <p>
-              Kiedy nie ma Cię w pomieszczeniu automatycznie zamknie lub otworzy rolete aby wykorzystac swiatlo sloneczne do ogrzewania.
+              Kiedy nie ma Cię w pomieszczeniu automatycznie zamknie lub otworzy
+              rolete aby wykorzystac swiatlo sloneczne do ogrzewania.
             </p>
             <p>
-              Kiedy wyjedziesz na dluzej system zadba o to aby zabezpieczyc Twój dom i oszczędzać energię. Wystarczy jedno kliknięcie i dom przełączy się w tryb Hibrnacji.
+              Kiedy wyjedziesz na dluzej system zadba o to aby zabezpieczyc Twój
+              dom i oszczędzać energię. Wystarczy jedno kliknięcie i dom
+              przełączy się w tryb Hibrnacji.
             </p>
             <img alt="q" src={servicesImg2} />
           </li>
-          
+
           <li>
             <h4>Podlewanie</h4>
             <p>
-              Nie potrzebujesz skomplikowanego systemu podlewania. W polaczeniu z informacjami o pogodzie
-              ze stacji pogodowej lub z internetowego serwisu pogodowego system zdecyduje czy warto podlewać
-              ogród.
+              Nie potrzebujesz skomplikowanego systemu podlewania. W polaczeniu
+              z informacjami o pogodzie ze stacji pogodowej lub z internetowego
+              serwisu pogodowego system zdecyduje czy warto podlewać ogród.
             </p>
             <p>
-              Do uruchomienia podlewania wystarczy zasilanie w wode i skrzynka z elektrozaworami w ogrodzie. Resztą zajmie się system.
+              Do uruchomienia podlewania wystarczy zasilanie w wode i skrzynka z
+              elektrozaworami w ogrodzie. Resztą zajmie się system.
             </p>
             <img alt="q" src={servicesImg2} />
           </li>
@@ -58,12 +75,12 @@ export default function Services() {
             <p>
               Otwieraj furtki, bramy i drzwi za pomocą kodu lub breloczka NFC.
               Udostępniaj tymczasowe kody kurierowi lub firmie sprzątającej.
-              Otwieraj furtki, bramy, drzwi zdalnie dzięki integracji z wideodomofonem.
+              Otwieraj furtki, bramy, drzwi zdalnie dzięki integracji z
+              wideodomofonem.
             </p>
             <img alt="q" src={servicesImg1} />
           </li>
 
-          
           <li>
             <h4>Multimedia</h4>
             <p>
@@ -75,6 +92,7 @@ export default function Services() {
             </p>
             <img alt="q" src={servicesImg2} />
           </li>
+
           <li>
             <h4>Zarzadzanie energia elektryczna w budynkach komercyjnych</h4>
             <p>
@@ -90,6 +108,7 @@ export default function Services() {
             </p>
             <img alt="q" src={servicesImg1} />
           </li>
+
           <li>
             <h4>Systemy zarzadzania budynkami komercyjnymi</h4>
             <p>
