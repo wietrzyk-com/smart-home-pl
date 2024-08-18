@@ -5,11 +5,11 @@ import postsImg2 from "./posts2.png";
 export default function Posts() {
   return (
     <section id="Posts">
-      <div>
+      <div id="posts">
         <h2>Baza wiedzy</h2>
         <ul className="custom-list">
           <li>
-            <a href="#">
+            <a href="/p/automatyka-domowa-loxone-dla-projektantow-wnetrz">
               <img alt="post" src={postsImg1} />
               <h4>Automatyka domowa Loxone dla Projektantów Wnętrz</h4>
               <p>

@@ -1,0 +1,55 @@
+#Post1 {
+  padding: 1.9em 2.5em;
+  border-bottom: 1px solid #444444;
+
+  h2 {
+    color: #7d7d7d;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.2em;
+  }
+
+  h3 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-size: 150%;
+    line-height: 2.5rem;
+  }
+
+  h4 {
+    margin-bottom: 1em;
+    font-size: 120%;
+  }
+
+  p {
+    color: #7d7d7d;
+    margin-bottom: 1em;
+  }
+
+  a {
+    //text-decoration: none;
+    color: #444444;
+  }
+
+  li {
+    margin-bottom: 1em;
+    color: #7d7d7d;
+  }
+
+  blockquote > p {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    padding: 1em;
+    background-color: #ececec;
+    //color: #444444;
+  }
+
+  strong {
+    color: #444444;
+  }
+
+  @media (min-device-width: 768px) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

@@ -50,14 +50,19 @@ export default function HomePage() {
                 Usługi
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#our-products" onClick={handleItemClick}>
                 Produkty
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact-us" onClick={handleItemClick}>
                 Kontakt
+              </a>
+            </li>
+            <li>
+              <a href="#posts" onClick={handleItemClick}>
+                Baza wiedzy
               </a>
             </li>
           </ul>
