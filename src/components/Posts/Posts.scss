@@ -11,8 +11,6 @@
   .custom-list {
     a {
       text-decoration: none;
-      font-style: normal;
-      color: #444444;
     }
 
     img {
@@ -28,12 +26,14 @@
       margin-top: 1em;
       margin-bottom: 0.5em;
       font-size: 150%;
+      color: #444444;
     }
 
     p {
       color: #7d7d7d;
       //border-bottom: 1px solid #d9d9d9;
       padding-bottom: 1.7em;
+      margin-bottom: 0;
     }
     counter-reset: custom-counter;
     list-style: none;
@@ -41,9 +41,27 @@
     margin: 0;
   }
 
+  > div:last-child {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      font-style: normal;
+      color: #444444;
+    }
+  }
+
   @media (min-device-width: 768px) {
     padding-left: 5%;
     padding-right: 5%;
+
+    > div:last-child {
+      a {
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+    }
 
     .custom-list {
       display: grid;
@@ -58,10 +76,6 @@
         margin-top: 0em;
         width: 100%; /* Set the desired square size */
         height: 20em;
-      }
-
-      p {
-        margin-bottom: 0;
       }
     }
   }

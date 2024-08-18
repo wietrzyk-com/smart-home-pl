@@ -63,6 +63,10 @@ export default function Posts() {
           </li>
         </ul>
       </div>
+      <div className="pagination">
+        <a href="#prev">&laquo; wstecz</a>
+        <a href="#next">dalej &raquo;</a>
+      </div>
     </section>
   );
 }
