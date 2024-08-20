@@ -31,7 +31,7 @@ export default function HomePage() {
     <section id="HomePage">
       <div>
         <a href="/">
-          <img class="logo" alt="logo" src={logoWhite} />
+          <img className="logo" alt="logo" src={logoWhite} />
         </a>
         {isLinkVisible && (
           <a href="ff" onClick={handleMenuClick}>
