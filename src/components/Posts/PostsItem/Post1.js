@@ -26,7 +26,7 @@ export default function Post1() {
         Do wyboru są{" "}
         <a
           href="https://shop.loxone.com/plpl/led-spot-rgbw-tree-bialy-v2.html"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           podtynkowe spoty
@@ -34,7 +34,7 @@ export default function Post1() {
         ,{" "}
         <a
           href="https://shop.loxone.com/plpl/natynkowy-spot-led-rgbw-tree-antracytowy-1380.html"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           natynkowe spoty
@@ -42,7 +42,7 @@ export default function Post1() {
         ,{" "}
         <a
           href="https://shop.loxone.com/plpl/led-pendulum-slim-tree-bialy.html"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           wiszące tuby
@@ -50,7 +50,7 @@ export default function Post1() {
         i{" "}
         <a
           href="https://shop.loxone.com/plpl/oprawa-sufitowa-led-rgbw-tree-bialy.html"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           plafony łazienkowe
@@ -63,7 +63,7 @@ export default function Post1() {
         Ciekawym rozwiązaniem są również lampki nocne{" "}
         <a
           href="https://shop.loxone.com/plpl/touch-nightlight-air.html"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           Touch Nightlight
@@ -127,7 +127,7 @@ export default function Post1() {
         żarówki od{" "}
         <a
           href="https://minalox.sk/collections/ziarovky?constraint=24v"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           Minalox
@@ -186,7 +186,7 @@ export default function Post1() {
           jest również{" "}
           <a
             href="https://shop.loxone.com/plpl/touch-pure-co2-tree-antracytowy.html"
-            rel="noopener ugc nofollow"
+            rel="noreferrer noopener ugc nofollow"
             target="_blank"
           >
             wersja szklana włącznika z czujnikiem CO2
@@ -237,7 +237,7 @@ export default function Post1() {
           wcześniej budzik/lampkę/włącznik{" "}
           <a
             href="https://shop.loxone.com/plpl/touch-nightlight-air.html"
-            rel="noopener ugc nofollow"
+            rel="noreferrer noopener ugc nofollow"
             target="_blank"
           >
             Touch Nightlight
@@ -249,7 +249,7 @@ export default function Post1() {
           centralnie umieszczony tablet,{" "}
           <a
             href="https://shop.loxone.com/plpl/remote-air.html"
-            rel="noopener ugc nofollow"
+            rel="noreferrer noopener ugc nofollow"
             target="_blank"
           >
             bezprzewodowy pilot
@@ -257,7 +257,7 @@ export default function Post1() {
           , który może leżeć na stoliku kawowym czy też włącznik{" "}
           <a
             href="https://shop.loxone.com/plpl/touch-surface-tree.html"
-            rel="noopener ugc nofollow"
+            rel="noreferrer noopener ugc nofollow"
             target="_blank"
           >
             Touch Surface
@@ -290,7 +290,7 @@ export default function Post1() {
         Loxone oferuje system{" "}
         <a
           href="https://www.loxone.com/plpl/produkty/audioserver/"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           multiroom audio
@@ -329,7 +329,7 @@ export default function Post1() {
         Zaplanuj lokalizację{" "}
         <a
           href="https://shop.loxone.com/plpl/intercom-antracytowy.html"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           interkomu
@@ -381,7 +381,7 @@ export default function Post1() {
       <h3>Podlewanie i oświetlenie ogrodu</h3>
       <p>
         System automatyki Loxone może z powodzeniem sterować oświetleniem w
-        ogrodzie, systemem podlewania (zamawiamy tylko część hydrauliczną i
+        ogrodzie, systemem podlewania zamawiamy tylko część hydrauliczną i
         skrzynkę z zaworami — logika i sterowanie zaworami pozostawiamy Loxone —
         będzie to rozwiązanie tańsze i w pełni zintegrowane z pozostałymi
         systemami — np. sterowaniem kosiarką autonomiczną czy stacją pogodową

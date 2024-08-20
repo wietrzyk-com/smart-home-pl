@@ -35,7 +35,7 @@ export default function Posts() {
           </li>
 
           <li>
-            <a href="#">
+            <a href="/p/ogrzewanie-w-inteligentnym-mieszkaniu">
               <img alt="post" src={postsImg2} />
               <h4>
                 Ogrzewanie w inteligentnym mieszkaniu — to nie jest takie
@@ -49,7 +49,7 @@ export default function Posts() {
           </li>
 
           <li>
-            <a href="#">
+            <a href="/p/ogrzewanie-w-inteligentnym-mieszkaniu">
               <img alt="post" src={postsImg2} />
               <h4>
                 Ogrzewanie w inteligentnym mieszkaniu — to nie jest takie

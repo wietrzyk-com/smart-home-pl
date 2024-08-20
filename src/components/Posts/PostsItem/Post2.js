@@ -138,7 +138,7 @@ export default function Post2() {
         Pobierz bezpłatny program{" "}
         <a
           href="https://www.loxone.com/plpl/produkty/loxone-config/"
-          rel="noopener ugc nofollow"
+          rel="noreferrer noopener ugc nofollow"
           target="_blank"
         >
           Loxone Config
