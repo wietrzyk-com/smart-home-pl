@@ -1,4 +1,4 @@
-import "./Post1.scss";
+import "./PostsItem.scss";
 
 export default function Post1() {
   return (

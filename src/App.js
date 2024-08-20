@@ -7,7 +7,8 @@ import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Posts from "./components/Posts/Posts";
-import Post1 from "./components/Posts/Post1/Post1";
+import Post1 from "./components/Posts/PostsItem/Post1";
+import Post2 from "./components/Posts/PostsItem/Post2";
 
 function App() {
   return (
@@ -30,6 +31,14 @@ function App() {
           element={
             <>
               <Post1 />
+            </>
+          }
+        />
+        <Route
+          path="/p/ogrzewanie-w-inteligentnym-mieszkaniu"
+          element={
+            <>
+              <Post2 />
             </>
           }
         />
