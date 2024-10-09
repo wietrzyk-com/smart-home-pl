@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
             <h4>Doświadczenie i doradztwo</h4>
             <p>
               Dzięki swojemu doświadczeniu jesteśmy w stanie doradzić
-              najbardzoej optymalne dopasowane do potrzeb i budzetu klienta.
+              najbardziej optymalne dopasowane do potrzeb i budzetu klienta.
             </p>
           </li>
           <li>

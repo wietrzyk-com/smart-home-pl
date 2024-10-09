@@ -13,12 +13,12 @@ import Post2 from "./components/Posts/PostsItem/Post2";
 function App() {
   return (
     <Router>
-      <HomePage />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <HomePage />
               <WhyChooseUs />
               <Services />
               <Testimonials />
@@ -30,6 +30,7 @@ function App() {
           path="/p/automatyka-domowa-loxone-dla-projektantow-wnetrz"
           element={
             <>
+              <HomePage homePage="false" />
               <Post1 />
             </>
           }
@@ -38,6 +39,7 @@ function App() {
           path="/p/ogrzewanie-w-inteligentnym-mieszkaniu"
           element={
             <>
+              <HomePage homePage={false} />
               <Post2 />
             </>
           }

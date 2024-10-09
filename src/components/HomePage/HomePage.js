@@ -3,7 +3,7 @@ import "./HomePage.scss";
 import { useState, useEffect } from "react";
 import logoWhite from "./logoWhite.svg";
 
-export default function HomePage() {
+export default function HomePage({ homePage = true }) {
   const [isLinkVisible, setLinkVisible] = useState(true);
   const [isListVisible, setListVisible] = useState(false);
   const handleMenuClick = (e) => {
@@ -28,7 +28,12 @@ export default function HomePage() {
   }, []);
 
   return (
-    <section id="HomePage">
+    <section
+      id="HomePage"
+      className={`${homePage ? "big" : "small"} ${
+        isListVisible ? "open" : "closed"
+      } `}
+    >
       <div>
         <a href="/">
           <img className="logo" alt="logo" src={logoWhite} />
@@ -68,28 +73,32 @@ export default function HomePage() {
           </ul>
         )}
       </div>
-      <h1>Smart.hyte.pl</h1>
-      <div>
-        <h2>Inteligentne domy</h2>
-        <p>Wygoda i realne oszczędności dla Twojego domu, biura, firmy.</p>
-        <p className="center">
-          <a className="btn" href="#contact-us">
-            Skontaktuj się
-          </a>
-        </p>
-      </div>
-      <div>
-        <dl>
-          <dd>20+</dd>
-          <dt>zrealizowanych projektow</dt>
-        </dl>
-        <dl>
-          <dd>
-            <small>do</small> 38%
-          </dd>
-          <dt>mnejsze rachunki</dt>
-        </dl>
-      </div>
+      {homePage && (
+        <>
+          <h1>Smart.hyte.pl</h1>
+          <div>
+            <h2>Inteligentne domy</h2>
+            <p>Wygoda i realne oszczędności dla Twojego domu, biura, firmy.</p>
+            <p className="center">
+              <a className="btn" href="#contact-us">
+                Skontaktuj się
+              </a>
+            </p>
+          </div>
+          <div>
+            <dl>
+              <dd>20+</dd>
+              <dt>zrealizowanych projektow</dt>
+            </dl>
+            <dl>
+              <dd>
+                <small>do</small> 38%
+              </dd>
+              <dt>mnejsze rachunki</dt>
+            </dl>
+          </div>
+        </>
+      )}
     </section>
   );
 }
