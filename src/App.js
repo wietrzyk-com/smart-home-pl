@@ -30,7 +30,7 @@ function App() {
           path="/p/automatyka-domowa-loxone-dla-projektantow-wnetrz"
           element={
             <>
-              <HomePage homePage="false" />
+              <HomePage homePage={false} />
               <Post1 />
             </>
           }
