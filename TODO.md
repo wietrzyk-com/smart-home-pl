@@ -3,8 +3,8 @@
 2. FAQ
 
 # Zdjęcia:
-1. Services
-2. Testimonials
+done: 1. Services
+done: 2. Testimonials
 
 # Adaptacja:
 done: 1. Posts: menu, logo 
