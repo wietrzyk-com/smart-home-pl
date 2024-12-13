@@ -7,8 +7,8 @@
 2. Testimonials
 
 # Adaptacja:
-1. Posts: menu, logo
-// 2. Posts: wstecz, dalej
+done: 1. Posts: menu, logo 
+2. Posts: wstecz, dalej
 
 # Contact Information netlify 
 

@@ -1,6 +1,12 @@
 import "./Services.scss";
-import servicesImg1 from "./services1.jpg";
-import servicesImg2 from "./services2.jpg";
+import servicesImg1 from "./ServicesImg/light.jpg";
+import servicesImg2 from "./ServicesImg/heating.jpg";
+import servicesImg3 from "./ServicesImg/watering.jpg";
+import servicesImg4 from "./ServicesImg/access.jpg";
+import servicesImg5 from "./ServicesImg/audio.jpg";
+import servicesImg6 from "./ServicesImg/energy.jpg";
+import servicesImg7 from "./ServicesImg/hotel.jpg";
+
 
 export default function Services() {
   return (
@@ -67,7 +73,7 @@ export default function Services() {
               Do uruchomienia podlewania wystarczy zasilanie w wode i skrzynka z
               elektrozaworami w ogrodzie. Resztą zajmie się system.
             </p>
-            <img alt="q" src={servicesImg2} />
+            <img alt="q" src={servicesImg3} />
           </li>
 
           <li>
@@ -78,7 +84,7 @@ export default function Services() {
               Otwieraj furtki, bramy, drzwi zdalnie dzięki integracji z
               wideodomofonem.
             </p>
-            <img alt="q" src={servicesImg1} />
+            <img alt="q" src={servicesImg4} />
           </li>
 
           <li>
@@ -90,7 +96,7 @@ export default function Services() {
               suficie lub na ścianie. System audio można wykorzystać również do
               odtwarzania komunikatów, dzwonka do drzwi i alarmów.
             </p>
-            <img alt="q" src={servicesImg2} />
+            <img alt="q" src={servicesImg5} />
           </li>
 
           <li>
@@ -106,7 +112,7 @@ export default function Services() {
               Profesjonalne projektowanie zapewnia niezawodność, bezpieczeństwo
               i zgodność z normami technicznymi.
             </p>
-            <img alt="q" src={servicesImg1} />
+            <img alt="q" src={servicesImg6} />
           </li>
 
           <li>
@@ -122,7 +128,7 @@ export default function Services() {
               co prowadzi do oszczędności kosztów i zrównoważonego rozwoju
               budynku.
             </p>
-            <img alt="q" src={servicesImg2} />
+            <img alt="q" src={servicesImg7} />
           </li>
         </ul>
       </div>
