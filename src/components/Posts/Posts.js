@@ -13,9 +13,8 @@ export default function Posts() {
               <img alt="post" src={postsImg1} />
               <h4>Automatyka domowa Loxone dla Projektantów Wnętrz</h4>
               <p>
-                Every time I try to load SVG to some new Create React App i
-                struggle with loading SVG files, mostly because I forget the
-                best solution I…
+                Dowiedz się, jak współpraca z projektantem wnętrz i zastosowanie nowoczesnych systemów automatyki może
+                poprawić efektywność pracy oraz komfort użytkowników.
               </p>
             </a>
           </li>
@@ -23,50 +22,21 @@ export default function Posts() {
           <li>
             <a href="/p/ogrzewanie-w-inteligentnym-mieszkaniu">
               <img alt="post" src={postsImg2} />
-              <h4>
-                Ogrzewanie w inteligentnym mieszkaniu — to nie jest takie
-                trudne!
-              </h4>
+              <h4>Ogrzewanie w inteligentnym mieszkaniu — to nie jest takie trudne!</h4>
               <p>
-                Nie musisz być elektrykiem aby zautomatyzować ogrzewanie w swoim
-                mieszkaniu, domu czy biurze.
+                Poznaj proste sposoby na zautomatyzowanie ogrzewania w swoim domu lub biurze, które przynoszą wygodę
+                i oszczędności.
               </p>
             </a>
           </li>
 
-          <li>
-            <a href="/p/ogrzewanie-w-inteligentnym-mieszkaniu">
-              <img alt="post" src={postsImg2} />
-              <h4>
-                Ogrzewanie w inteligentnym mieszkaniu — to nie jest takie
-                trudne!
-              </h4>
-              <p>
-                Nie musisz być elektrykiem aby zautomatyzować ogrzewanie w swoim
-                mieszkaniu, domu czy biurze.
-              </p>
-            </a>
-          </li>
-
-          <li>
-            <a href="/p/ogrzewanie-w-inteligentnym-mieszkaniu">
-              <img alt="post" src={postsImg2} />
-              <h4>
-                Ogrzewanie w inteligentnym mieszkaniu — to nie jest takie
-                trudne!
-              </h4>
-              <p>
-                Nie musisz być elektrykiem aby zautomatyzować ogrzewanie w swoim
-                mieszkaniu, domu czy biurze.
-              </p>
-            </a>
-          </li>
+          
         </ul>
       </div>
-      <div className="pagination">
+      {/* <div className="pagination">
         <a href="#prev">&laquo; wstecz</a>
         <a href="#next">dalej &raquo;</a>
-      </div>
+      </div> */}
     </section>
   );
 }

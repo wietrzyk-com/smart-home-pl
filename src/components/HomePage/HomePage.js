@@ -30,16 +30,15 @@ export default function HomePage({ homePage = true }) {
   return (
     <section
       id="HomePage"
-      className={`${homePage ? "big" : "small"} ${
-        isListVisible ? "open" : "closed"
-      } `}
+      className={`${homePage ? "big" : "small"} ${isListVisible ? "open" : "closed"
+        } `}
     >
       <div>
         <a href="/">
           <img className="logo" alt="logo" src={logoWhite} />
         </a>
         {isLinkVisible && (
-          <a href="ff" onClick={handleMenuClick}>
+          <a href="#" onClick={handleMenuClick}>
             <img alt="menu button" src={menuImg} />
           </a>
         )}
@@ -55,11 +54,6 @@ export default function HomePage({ homePage = true }) {
                 Usługi
               </a>
             </li>
-            {/* <li>
-              <a href="#our-products" onClick={handleItemClick}>
-                Produkty
-              </a>
-            </li> */}
             <li>
               <a href="#contact-us" onClick={handleItemClick}>
                 Kontakt
@@ -78,23 +72,23 @@ export default function HomePage({ homePage = true }) {
           <h1>Smart.hyte.pl</h1>
           <div>
             <h2>Inteligentne domy</h2>
-            <p>Wygoda i realne oszczędności dla Twojego domu, biura, firmy.</p>
+            <p>Wygodne, bezpieczne i oszczędne rozwiązania dla Twojego domu, biura i firmy.</p>
             <p className="center">
               <a className="btn" href="#contact-us">
-                Skontaktuj się
+                Skontaktuj się z nami
               </a>
             </p>
           </div>
           <div>
             <dl>
               <dd>20+</dd>
-              <dt>zrealizowanych projektow</dt>
+              <dt>Zrealizowanych projektów</dt>
             </dl>
             <dl>
               <dd>
                 <small>do</small> 38%
               </dd>
-              <dt>mnejsze rachunki</dt>
+              <dt>Mniejsze rachunki</dt>
             </dl>
           </div>
         </>

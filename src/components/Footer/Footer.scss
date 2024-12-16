@@ -1,4 +1,14 @@
 footer {
+  a, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #ccc;
+
+  }
+
   background-color: #000;
   color: white;
   padding: 1.9em 2.5em;

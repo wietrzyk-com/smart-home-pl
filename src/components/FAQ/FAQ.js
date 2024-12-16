@@ -7,20 +7,21 @@ const questions = [
     title: 'Ile to kosztuje?',
     body: <>
       <p>
-        Automatyzacja ogrzewania w małym budynku to koszt kilku tysiecy złotych, jednak oszczędności będą widoczne już na pierwszym rachunku za ogrzewanie, a komfort znacznie się poprawi.
+        Koszt automatyzacji zależy od zakresu prac i wybranych funkcji.
+        Na przykład automatyzacja ogrzewania w małym budynku to wydatek rzędu kilku tysięcy złotych, przy czym oszczędności będą widoczne już na pierwszym rachunku, a komfort użytkowania znacząco się poprawi.
       </p>
       <p>
-        Im więcej systemów integrujemy tym większe koszty w sprzęcie Loxone, ale też większe oszczędności. Typowa inwestycja w dom jednorodzinny to koszt w granicach 35 tys. zł, wersja luksusowa z oświetleniem od Loxone i absolutnie wszyskimi udogodnieniami zwykle zamyka się w 150 tys. zł.
+        Typowa inwestycja w pełne rozwiązanie dla domu jednorodzinnego wynosi około 35 tys. zł.
+        Wersje premium, obejmujące oświetlenie Loxone i dodatkowe udogodnienia, to koszt maksymalnie 150 tys. zł. To inwestycja, która zwraca się szybciej niż instalacja fotowoltaiki!
       </p>
     </>
   },
   {
-    title: "Czy instalację moze wykonać mój elektryk?",
+    title: "Czy instalację może wykonać mój elektryk?",
     body: (
       <p>
-        Convallis massa hac proin rutrum nisl habitasse. Tortor arcu eleifend
-        nec massa dictum purus. Erat varius vulputate orci lacus gravida
-        molestie habitant. Amet etiam dignissim.
+        Tak, współpracujemy z lokalnymi elektrykami, zapewniając im pełne wsparcie techniczne i szkolenia.
+        Dzięki temu Twój elektryk może bez problemu zainstalować nasze systemy zgodnie z najwyższymi standardami.
       </p>
     ),
   },
@@ -28,9 +29,8 @@ const questions = [
     title: "Co w pierwszej kolejności automatyzować?",
     body: (
       <p>
-        Convallis massa hac proin rutrum nisl habitasse. Tortor arcu eleifend
-        nec massa dictum purus. Erat varius vulputate orci lacus gravida
-        molestie habitant. Amet etiam dignissim.
+        Najlepiej zacząć od systemów przynoszących największe oszczędności i poprawę komfortu, takich jak ogrzewanie, oświetlenie czy sterowanie roletami.
+        Wybór odpowiednich funkcji zależy od Twoich priorytetów i stylu życia – doradzimy Ci w tym procesie!
       </p>
     ),
   },
@@ -38,9 +38,8 @@ const questions = [
     title: "Mam developera - czy mogę mieć inteligentny dom?",
     body: (
       <p>
-        Convallis massa hac proin rutrum nisl habitasse. Tortor arcu eleifend
-        nec massa dictum purus. Erat varius vulputate orci lacus gravida
-        molestie habitant. Amet etiam dignissim.
+        Oczywiście! Współpracujemy z deweloperami na różnych etapach budowy, oferując zarówno doradztwo, jak i kompleksowe wdrożenie.
+        Możesz mieć pewność, że Twój dom będzie w pełni inteligentny i dostosowany do Twoich potrzeb.
       </p>
     ),
   },
@@ -48,13 +47,13 @@ const questions = [
     title: "Chcę zbudować inteligentny dom sam, czy mogę liczyć na pomoc?",
     body: (
       <p>
-        Convallis massa hac proin rutrum nisl habitasse. Tortor arcu eleifend
-        nec massa dictum purus. Erat varius vulputate orci lacus gravida
-        molestie habitant. Amet etiam dignissim.
+        Zdecydowanie tak! Oferujemy wsparcie na każdym etapie – od wyboru sprzętu, przez projekt, aż po konfigurację.
+        Jeśli zdecydujesz się na samodzielne działania, zapewnimy Ci niezbędne materiały i wskazówki, aby cały proces był łatwy i przyjemny.
       </p>
     ),
   },
 ];
+
 
 export default function FAQ() {
   const [faqOpen, setFaqOpen] = useState(-1);
@@ -83,10 +82,10 @@ export default function FAQ() {
         </ul>
       </div>
       <div>
-        <p>Masz inne pytannia?</p>
+        <p>Masz inne pytania?</p>
         <p>
           <a className="btn" href="#contact-us">
-            Contact us
+            Skontaktuj się z nami
           </a>
         </p>
       </div>

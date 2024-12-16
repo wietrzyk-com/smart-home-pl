@@ -16,16 +16,14 @@ export default function ContactUs() {
     phoneOrEmail: "",
   });
 
-  const validateEmail = () => {
-    return validator.isEmail(formData.phoneOrEmail);
-  };
+  const validateEmail = () => validator.isEmail(formData.phoneOrEmail);
 
   const validatePhone = () => {
     const phoneNumber = formData.phoneOrEmail;
     try {
       const parsedNumber = parsePhoneNumber(phoneNumber, "PL");
-      return parsedNumber && isValidNumber(phoneNumber, "PL");
-    } catch (e) {
+      return parsedNumber && isValidNumber(parsedNumber.number, "PL");
+    } catch {
       return false;
     }
   };
@@ -48,20 +46,14 @@ export default function ContactUs() {
     e.preventDefault();
 
     if (!formData.phoneOrEmail) {
-      setErrors({
-        ...errors,
-        phoneOrEmail: "Phone number or Email is required",
-      });
+      setErrors({ ...errors, phoneOrEmail: "Podaj numer telefonu lub adres email." });
       return;
     }
 
     if (validateEmail() || validatePhone()) {
       setErrors({ ...errors, phoneOrEmail: "" });
     } else {
-      setErrors({
-        ...errors,
-        phoneOrEmail: "Podaj prawidlowy nr telefonu albo email",
-      });
+      setErrors({ ...errors, phoneOrEmail: "Wprowadź poprawny numer telefonu lub adres email." });
       return;
     }
 
@@ -76,11 +68,12 @@ export default function ContactUs() {
       .then((result) => {
         scrollToAlert();
         if (result.status !== 200) {
-          return setFormState("error");
+          setFormState("error");
+        } else {
+          setFormState("success");
         }
-        setFormState("success");
       })
-      .catch((error) => {
+      .catch(() => {
         setFormState("error");
         scrollToAlert();
       });
@@ -91,66 +84,61 @@ export default function ContactUs() {
       <div id="contact-us">
         {formState === "success" && (
           <div className="alertMessage success">
-            <h3>Wiadomosc wyslana</h3>
-            <p>
-              Dziekujemy za wyslanie wiadomosci - odezwiemy sie do Panstwa
-              najszybciej jak bedzie to mozliwe!
-            </p>
+            <h3>Wiadomość wysłana!</h3>
+            <p>Dziękujemy za kontakt! Odezwiemy się najszybciej, jak to możliwe.</p>
           </div>
         )}
         {formState === "error" && (
           <div className="alertMessage error">
-            <h3>Blad wysylania wiadomosci</h3>
+            <h3>Błąd wysyłania wiadomości</h3>
             <p>
-              Z jakiegos powodu nie udalo sie wyslac wiadomosci. Prosimy o
-              kontakt email <a href="mailto:smart@hyte.pl">smart@hyte.pl</a> lub
-              telefoniczny na nr <a href="callto:+48729086677">729 086 677</a>
+              Wystąpił problem z wysłaniem wiadomości. Skontaktuj się z nami pod adresem
+              <a href="mailto:smart@hyte.pl"> smart@hyte.pl</a> lub telefonicznie pod numerem
+              <a href="tel:+48729086677"> 729 086 677</a>.
             </p>
           </div>
         )}
         {formState === "default" && (
           <form onSubmit={handleSubmit} className="contact-form">
-            <h2>Contact Information</h2>
+            <h2>Informacje kontaktowe</h2>
 
             <label>
-              Name
+              Imię i nazwisko
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Name"
+                placeholder="Imię i nazwisko"
               />
             </label>
 
             <label>
-              Phone number or Email *
+              Numer telefonu lub email *
               <input
                 type="text"
                 name="phoneOrEmail"
                 value={formData.phoneOrEmail}
                 onChange={handleChange}
-                placeholder="Phone number or Email"
+                placeholder="Numer telefonu lub email"
                 required
               />
-              {errors.phoneOrEmail && (
-                <span className="error">{errors.phoneOrEmail}</span>
-              )}
+              {errors.phoneOrEmail && <span className="error">{errors.phoneOrEmail}</span>}
             </label>
 
             <label>
-              Comments
+              Wiadomość
               <textarea
                 name="comments"
                 value={formData.comments}
                 onChange={handleChange}
-                placeholder="Comments"
+                placeholder="Wiadomość..."
               ></textarea>
             </label>
 
-            <a onClick={handleSubmit} className="btn" href="#q">
-              Submit
-            </a>
+            <button type="submit" className="btn">
+              Wyślij
+            </button>
           </form>
         )}
       </div>
