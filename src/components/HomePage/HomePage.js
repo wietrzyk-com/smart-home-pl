@@ -38,7 +38,7 @@ export default function HomePage({ homePage = true }) {
           <img className="logo" alt="logo" src={logoWhite} />
         </a>
         {isLinkVisible && (
-          <a href="#" onClick={handleMenuClick}>
+          <a href="#menu" onClick={handleMenuClick}>
             <img alt="menu button" src={menuImg} />
           </a>
         )}
