@@ -1,8 +1,8 @@
 import testimonialImg1 from "./testimonial1.jpg";
 import testimonialImg2 from "./testimonial2.jpg";
-import testimonialImg3 from "./testimonial2.jpg";
-import testimonialImg4 from "./testimonial2.jpg";
-import testimonialImg5 from "./testimonial2.jpg";
+import testimonialImg3 from "./testimonial3.png";
+import testimonialImg4 from "./testimonial4.jpg";
+import testimonialImg5 from "./testimonial5.jpg";
 import "./Testimonials.scss";
 
 export default function Testimonials() {

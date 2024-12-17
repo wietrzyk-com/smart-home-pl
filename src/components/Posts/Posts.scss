@@ -6,7 +6,7 @@
     color: #7d7d7d;
     font-weight: 400;
     text-transform: uppercase;
-    padding-left: 1em;
+    
   }
 
   .custom-list {
@@ -56,6 +56,10 @@
   @media (min-device-width: 768px) {
     padding-left: 5%;
     padding-right: 5%;
+
+    h2 {
+      padding-left: 1.3em;
+    }
 
     > div:last-child {
       a {
